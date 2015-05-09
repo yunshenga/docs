@@ -20,7 +20,7 @@ msgstr ""
 # a291d1ca08fb4b6a951e48d4a0ac9306
 #: ../source/core/cursors.txt:5
 msgid "Cursors"
-msgstr ""
+msgstr "游标"
 
 # 5b1476a86c984c80a49adee4dfeffeda
 #: ../source/core/cursors.txt:9
@@ -28,7 +28,8 @@ msgid ""
 "In the :program:`mongo` shell, the primary method for the read operation is "
 "the :method:`db.collection.find()` method. This method queries a collection "
 "and returns a :term:`cursor` to the returning documents."
-msgstr ""
+msgstr "在mongo中，最主要的读操作方法就是db.collection.find()。这个方法从集合中查询，"
+"然后返回一个指向返回结果集的游标"
 
 # 6a7ff21cd1e2446fa6abfd7e080a32ff
 #: ../source/core/cursors.txt:14
@@ -38,7 +39,9 @@ msgid ""
 " using the ``var`` keyword, then the cursor is automatically iterated up to "
 "20 times [#set-shell-batch-size]_ to print up to the first 20 documents in "
 "the results."
-msgstr ""
+msgstr "为了得到返回的结果，你需要迭代遍历这个游标。需要注意的是，在Mongo中，"
+"如果返回的游标没有赋给一个使用'var'关键字的变量，游标会自动迭代二十次，去输出"
+"查询结果中的前二十项"
 
 # 76950e33cdc745e99a140df9a48c30cb
 #: ../source/core/cursors.txt:20
@@ -46,7 +49,8 @@ msgid ""
 "For example, in the :program:`mongo` shell, the following read operation "
 "queries the ``inventory`` collection for documents that have ``type`` equal "
 "to ``'food'`` and automatically print up to the first 20 matching documents:"
-msgstr ""
+msgstr "例如下面的语句，从集合inventory中查询type等于food的结果，然后自动输出"
+"前20项"
 
 # 66ff24b1f2f54ab3b901cdecdae6cc26
 #: ../source/core/cursors.txt:29
@@ -66,12 +70,12 @@ msgstr ""
 # 9669702d0aa048fb8e1732dc4b65dadb
 #: ../source/core/cursors.txt:37
 msgid "Cursor Behaviors"
-msgstr ""
+msgstr "游标行为"
 
 # b1347c3bebdf4b178d3ce349ed80bc64
 #: ../source/core/cursors.txt:40
 msgid "Closure of Inactive Cursors"
-msgstr ""
+msgstr "终止闲置的游标"
 
 # ac5fad79eb3a4490ab9f2486aafec1ae
 #: ../source/core/cursors.txt:42
